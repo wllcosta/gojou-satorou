@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Micro+5&family=Protest+Revolution&display=swap');
+
+:root {
+    --cor-branca: #F6F6F6;
+    --cor-preto: #000000;
+    --cor-azul: #22D4FD;
+    --cor-vermelho: #fa1010;
+    --cor-terciaria: #e100ff;
+
+    --fonte-primaria: "Bebas Neue", sans-serif;
+    --fonte-secundaria: "Protest Revolution", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-preto);
+    color: var(--cor-branca);
+}
+
+.titulo_destaque {
+    color: var(--cor-azul);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 200px;
+}
+
+.cabecalho__jujutsu {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    color: var(--cor-azul);
+    font-size: 24px;
+    text-decoration: none;
+    
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.6rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.75rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.apresentacao__botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.apresentacao__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 2.25rem;
+}
+
+.apresentacao__botao__botao1 {
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    width: 50%;
+    border: 2px solid var(--cor-azul);
+    border-radius: 8px;
+    padding: 21.5px 0;
+}
+
+.apresentacao__botao__botao2 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    width: 50%;
+    border: 2px solid var(--cor-vermelho);
+    border-radius: 8px;
+    padding: 21.5px 0;
+}
+
+.apresentacao__botao__botao3 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    width: 50%;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 21.5px 0;
+}
+
+
+.apresentacao__botao__botao1:hover {
+    background-color: var(--cor-azul);
+}
+
+
+.apresentacao__botao__botao2:hover {
+    background-color: var(--cor-vermelho);
+}
+
+.apresentacao__botao__botao3:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.imagem {
+    width: 50%;
+}
+
+.rodape {
+    background-color: var(--cor-azul);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    padding: 24px;
+   
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 8%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+
+}
+
+
